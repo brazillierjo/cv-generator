@@ -1,34 +1,29 @@
 <script setup lang="ts">
-const handleGeneratePDF = async () => {
-  try {
-    const response = await fetch('/api/generate-pdf', {
-      method: 'GET',
-    })
+import {useCvStore} from '~/stores/cvStore'
+import {ref, watch} from 'vue'
+import {handleGeneratePDF} from '~/utils/handleGenerateCV'
+import type {Locale} from "~/utils/interfaces/Locales";
 
-    if (!response.ok) throw new Error('Erreur lors de la génération du PDF')
+const cvStore = useCvStore()
+const selectedLocale = ref(cvStore.currentLocale)
 
-    const blob = await response.blob()
-    const url = window.URL.createObjectURL(blob)
-
-    const a = document.createElement('a')
-
-    a.href = url
-    a.download = 'CV-RINCON_BRAZILLIER_Johan.pdf'
-    document.body.appendChild(a)
-    a.click()
-
-    window.URL.revokeObjectURL(url)
-    document.body.removeChild(a)
-  } catch (error) {
-    console.error('Erreur:', error)
-  }
-}
+watch(selectedLocale, async newLocale => {
+  cvStore.loadData(newLocale as Locale)
+})
 </script>
 
 <template>
-  <header class="print:hidden mb-10">
-    <button @click="handleGeneratePDF">
-      Générer PDF
-    </button>
+  <header class="mb-10 flex items-center justify-between print:hidden">
+    <select
+        id="locale-select"
+        v-model="selectedLocale"
+        class="rounded-md border px-2 py-1"
+    >
+      <option value="fr-CH">Français (Suisse)</option>
+      <option value="en-US">Anglais (US)</option>
+      <option value="fr-FR">Français (France)</option>
+    </select>
+
+    <button @click="handleGeneratePDF">Générer PDF</button>
   </header>
 </template>

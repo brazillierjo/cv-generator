@@ -1,7 +1,4 @@
-<script setup>
-import CV from '~/components/CV.vue'
-
-const handleGeneratePDF = async () => {
+export const handleGeneratePDF = async () => {
   try {
     const response = await fetch('/api/generate-pdf', {
       method: 'GET',
@@ -25,12 +22,3 @@ const handleGeneratePDF = async () => {
     console.error('Erreur:', error)
   }
 }
-</script>
-
-<template>
-  <HeaderFeatures />
-
-  <div class="bg-[#f3f4f6]">
-    <CV />
-  </div>
-</template>

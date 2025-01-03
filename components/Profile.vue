@@ -1,12 +1,18 @@
 <script setup lang="ts">
-import cv from '~/data/cv-fr-FR.json'
 import Card from '~/components/ui/Card.vue'
 import profileImg from '~/assets/profile.jpeg'
 import bgImg from '~/assets/geneva.jpeg'
+import type { Locale } from '~/utils/interfaces/Locales'
+
+const cvStore = useCvStore()
+
+onMounted(() => {
+  cvStore.loadData(cvStore.currentLocale as Locale)
+})
 </script>
 
 <template>
-  <Card>
+  <Card v-if="cvStore.data">
     <div
       class="relative h-24 w-full rounded-t-md bg-cover bg-center"
       :style="{ backgroundImage: `url(${bgImg})` }"
@@ -19,12 +25,14 @@ import bgImg from '~/assets/geneva.jpeg'
     </div>
 
     <div class="mt-8">
-      <h1 class="text-2xl font-bold text-gray-900">{{ cv.name }}</h1>
-      <p class="text-lg font-medium text-gray-600">{{ cv.title }}</p>
+      <h1 class="text-2xl font-bold text-gray-900">
+        {{ cvStore.data.name }}
+      </h1>
+      <p class="text-lg font-medium text-gray-600">{{ cvStore.data.title }}</p>
 
       <div class="mt-4 flex flex-wrap justify-start gap-2">
         <span
-          v-for="skill in cv.skills"
+          v-for="skill in cvStore.data.skills"
           :key="skill"
           class="rounded-md bg-gray-200 px-2 py-1 text-xs font-medium"
         >
