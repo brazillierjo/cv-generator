@@ -2,7 +2,7 @@ import puppeteer from 'puppeteer'
 
 export async function generatePDF() {
   const baseURL =
-    process.env.NODE_ENV === 'production'
+    process.env.NUXT_PUBLIC_SITE_URL === 'cv-generator-dun-beta.vercel.app'
       ? process.env.NUXT_PUBLIC_SITE_URL
       : 'http://localhost:3000'
 
