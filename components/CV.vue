@@ -5,9 +5,9 @@ import Educations from '~/components/Educations.vue'
 </script>
 
 <template>
-  <div class="flex flex-col gap-3 h-full">
-    <div class="flex gap-3 h-full">
-      <div class="w-1/3 h-full">
+  <div class="flex h-full flex-col gap-3">
+    <div class="flex h-full gap-3">
+      <div class="h-full w-1/3">
         <aside class="flex flex-col gap-3">
           <Profile />
           <About />
@@ -17,7 +17,7 @@ import Educations from '~/components/Educations.vue'
         </aside>
       </div>
 
-      <div class="flex w-2/3 flex-col gap-3 h-full">
+      <div class="flex h-full w-2/3 flex-col gap-3">
         <Experiences />
       </div>
     </div>

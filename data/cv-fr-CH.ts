@@ -92,8 +92,7 @@ const cvFrCh: CvData = {
   ],
   educations: [
     {
-      degree:
-        "Diplôme Fédéral de Développeur Web et Mobile (Bachelor)",
+      degree: 'Diplôme Fédéral de Développeur Web et Mobile (Bachelor)',
       institution: '3WAcademy, Aix en Provence',
       year: '2021',
     },

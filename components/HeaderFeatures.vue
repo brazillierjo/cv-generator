@@ -24,41 +24,54 @@ watch(selectedLocale, async newLocale => {
       break
   }
 })
+
+const isProduction = process.env.NODE_ENV === 'production'
 </script>
 
 <template>
-  <header
-    class="flex items-center justify-between border-b border-title px-8 py-6 print:hidden"
-  >
-    <div class="relative w-fit">
-      <div
-        class="relative w-full cursor-pointer rounded-full bg-tertiary px-3 py-1.5 pr-8 text-sm font-medium text-white transition"
-      >
-        {{ currentLocaleName }}
-
-        <Icon
-          name="mdi:chevron-down"
-          class="absolute right-3 top-1/2 -translate-y-1/2"
-          size="20"
-        />
-      </div>
-
-      <select
-        class="absolute inset-0 h-full w-full cursor-pointer appearance-none opacity-0"
-        v-model="selectedLocale"
-      >
-        <option value="fr-FR">Français (France 🇫🇷)</option>
-        <option value="en-US">Anglais (US 🇺🇸)</option>
-        <option value="fr-CH">Français (Suisse 🇨🇭)</option>
-      </select>
+  <div>
+    <div v-if="isProduction" class="text-center text-xs text-lightParagraph">
+      La génération de PDF ne fonctionne pas en production sur Vercel en raison
+      de l'absence de support pour l'exécution de Chromium dans un environnement
+      headless sur leur plateforme.
+    </div>
+    <div v-if="isProduction" class="text-center text-xs text-lightParagraph">
+      Faire tourner le projet en local pour pouvoir l'utiliser.
     </div>
 
-    <button
-      class="flex items-center gap-3 rounded-lg bg-tertiary px-3 py-1.5 text-white transition hover:bg-tertiary"
-      @click="handleGeneratePDF"
+    <header
+      class="flex items-center justify-between border-b bg-primary border-title px-8 py-3 print:hidden"
     >
-      GET PDF
-      <Icon name="uil:file-download" class="mr-2 h-5 w-5" />
-    </button>
-  </header>
+      <div class="relative w-fit">
+        <div
+          class="relative w-full cursor-pointer rounded-full bg-tertiary px-3 py-1.5 pr-8 text-sm font-medium text-white transition"
+        >
+          {{ currentLocaleName }}
+
+          <Icon
+            name="mdi:chevron-down"
+            class="absolute right-3 top-1/2 -translate-y-1/2"
+            size="20"
+          />
+        </div>
+
+        <select
+          class="absolute inset-0 h-full w-full cursor-pointer appearance-none opacity-0"
+          v-model="selectedLocale"
+        >
+          <option value="fr-FR">Français (France 🇫🇷)</option>
+          <option value="en-US">Anglais (US 🇺🇸)</option>
+          <option value="fr-CH">Français (Suisse 🇨🇭)</option>
+        </select>
+      </div>
+
+      <button
+        class="flex items-center gap-3 rounded-lg bg-tertiary px-3 py-1.5 text-white transition hover:bg-tertiary"
+        @click="handleGeneratePDF"
+      >
+        GET PDF
+        <Icon name="uil:file-download" class="mr-2 h-5 w-5" />
+      </button>
+    </header>
+  </div>
 </template>

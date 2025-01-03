@@ -35,7 +35,7 @@ onMounted(() => {
           </p>
         </div>
 
-        <div class="mt-1 flex items-center text-xs gap-3">
+        <div class="mt-1 flex items-center gap-3 text-xs">
           <p
             v-if="experience.company"
             class="flex items-center gap-1 text-paragraph"
