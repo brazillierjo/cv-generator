@@ -31,7 +31,9 @@ onMounted(() => {
 
       <p class="text-lg font-medium text-paragraph">{{ cvStore.data.title }}</p>
 
-      <p class="mt-3 text-sm text-lightParagraph">{{ cvStore.data.smallAbout }}</p>
+      <p class="mt-3 text-sm text-lightParagraph">
+        {{ cvStore.data.smallAbout }}
+      </p>
     </div>
   </Card>
 </template>

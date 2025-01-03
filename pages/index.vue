@@ -5,9 +5,7 @@ import CV from '~/components/CV.vue'
 <template>
   <HeaderFeatures />
 
-  <div class="bg-primary">
-    <div class="mx-auto max-w-4xl">
-      <CV />
-    </div>
+  <div class="mx-auto mt-6 max-w-4xl bg-primary">
+    <CV />
   </div>
 </template>

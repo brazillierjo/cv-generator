@@ -10,6 +10,7 @@ import SkillsTag from '~/components/SkillsTag.vue'
         <Profile />
         <Contact />
         <SkillsTag />
+        <Languages />
       </aside>
     </div>
 
