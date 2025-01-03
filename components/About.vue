@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import cv from '~/data/cv.json'
+import cv from '~/data/cv-fr-FR.json'
 import Card from '~/components/ui/Card.vue'
 </script>
 

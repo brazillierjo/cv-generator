@@ -1,6 +1,4 @@
-<script setup>
-import CV from '~/components/CV.vue'
-
+<script setup lang="ts">
 const handleGeneratePDF = async () => {
   try {
     const response = await fetch('/api/generate-pdf', {
@@ -28,9 +26,9 @@ const handleGeneratePDF = async () => {
 </script>
 
 <template>
-  <HeaderFeatures/>
-
-  <div class="bg-[#f3f4f6]">
-    <CV/>
-  </div>
+  <header class="print:hidden mb-10">
+    <button @click="handleGeneratePDF">
+      Générer PDF
+    </button>
+  </header>
 </template>
