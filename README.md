@@ -1,79 +1,49 @@
-# Nuxt Minimal Starter
+# CV Generator
 
-Look at the
-[Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to
-learn more.
+Generate customizable CVs from JSON data using Nuxt, Tailwind, and Puppeteer.
+
+## Features
+
+- JSON-based CV data input
+- Customizable color schemes
+- PDF export
+
+## Tech Stack
+
+- Nuxt 3
+- Tailwind CSS
+- Puppeteer
+- TypeScript
 
 ## Setup
 
-Make sure to install dependencies:
-
 ```bash
-# npm
+# Install dependencies
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# Development server
 npm run dev
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
+# Build for production
 npm run build
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
+# Preview production build
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the
-[deployment documentation](https://nuxt.com/docs/getting-started/deployment) for
-more information.
+## Usage
+
+1. Create your CV data in JSON format, add it to `data/cvData.ts`
+2. Customize colors through the theme panel (tailwind.config.ts)
+3. Export to PDF
+
+## Project Structure
+
+```
+├── components/
+├── pages/
+├── public/
+├── server/
+│   └── api/
+└── types/
+```
