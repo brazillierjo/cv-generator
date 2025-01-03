@@ -17,7 +17,7 @@ onMounted(() => {
 
     <div class="flex flex-col gap-2">
       <div v-for="language in cvStore.data.languages" :key="language">
-        <p class="flex items-center gap-1 text-sm text-lightParagraph">
+        <p class="flex items-center gap-1 text-lightParagraph">
           {{ language }}
         </p>
       </div>

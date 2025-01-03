@@ -16,9 +16,9 @@ const cvFrCh: CvData = {
     phone: '+33 6 38 02 76 49',
   },
   smallAbout:
-      "Développeur full-stack avec 5 ans d’expérience, expert en Next.js, Nuxt.js, Tailwind et TypeScript.",
+    'Développeur full-stack avec 5 ans d’expérience, expert en Next.js, Nuxt.js, Tailwind et TypeScript.',
   about:
-      "Développeur full-stack orienté Front-end, expert en intégration précise de maquettes et en communication avec les API. Maîtrise des méthodologies AGILE et du Clean Code pour des solutions robustes et durables, avec une attention minutieuse aux détails.",
+    'Développeur full-stack orienté Front-end, expert en intégration précise de maquettes et en communication avec les API. Maîtrise des méthodologies AGILE et du Clean Code pour des solutions robustes et durables, avec une attention minutieuse aux détails.',
   skills: [
     'TypeScript',
     'React',
@@ -42,7 +42,7 @@ const cvFrCh: CvData = {
       period: '08/2024 - présent',
       tasks: [
         "Développement d'UI modernes avec Next.js, TailwindCSS et TypeScript",
-        "Analyse des besoins utilisateurs pour des solutions adaptées",
+        'Analyse des besoins utilisateurs pour des solutions adaptées',
       ],
     },
     {
@@ -52,9 +52,9 @@ const cvFrCh: CvData = {
       period: '01/2022 - 08/2024',
       tasks: [
         "Développement d'UI avec React, Next.js, TypeScript et TailwindCSS",
-        "Transformation de maquettes Figma en pages web pixel perfect",
-        "Intégration et optimisation des communications API Symfony",
-        "Automatisation des processus CI/CD, documentation UI avec Storybook et containerisation avec Docker",
+        'Transformation de maquettes Figma en pages web pixel perfect',
+        'Intégration et optimisation des communications API Symfony',
+        'Automatisation des processus CI/CD, documentation UI avec Storybook et containerisation avec Docker',
       ],
     },
     {
@@ -63,9 +63,9 @@ const cvFrCh: CvData = {
       location: '',
       period: '01/2022 - présent',
       tasks: [
-        "Conception et développement de solutions web sur mesure pour les clients",
-        "Collaboration étroite avec les équipes pour respecter les délais",
-        "Maintenance et support technique pour assurer la performance et pérennité des sites",
+        'Conception et développement de solutions web sur mesure pour les clients',
+        'Collaboration étroite avec les équipes pour respecter les délais',
+        'Maintenance et support technique pour assurer la performance et pérennité des sites',
       ],
     },
     {
@@ -93,7 +93,7 @@ const cvFrCh: CvData = {
   educations: [
     {
       degree:
-        "Diplôme Fédéral d'Intégrateur/Développeur Web et Mobile (Bachelor)",
+        "Diplôme Fédéral de Développeur Web et Mobile (Bachelor)",
       institution: '3WAcademy, Aix en Provence',
       year: '2021',
     },

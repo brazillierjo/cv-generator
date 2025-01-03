@@ -15,14 +15,15 @@ onMounted(() => {
       {{ cvStore.data.titles.education }}
     </h3>
 
-    <div class="flex flex-col gap-6">
-      <div class="bg-tagsBg p-4 rounded-lg"
+    <div class="grid grid-cols-2 gap-3">
+      <div
+        class="rounded-lg bg-tagsBg p-2"
         v-for="education in cvStore.data.educations"
         :key="education.degree"
       >
         <div class="flex items-center justify-between">
           <p
-            class="flex items-center gap-1 text-lg font-semibold text-paragraph"
+            class="flex items-center gap-1 text-base font-semibold text-paragraph"
           >
             {{ education.degree }}
           </p>
@@ -34,8 +35,11 @@ onMounted(() => {
           </p>
         </div>
 
-        <div class="flex items-center gap-3 mt-1">
-          <p v-if="education.institution" class="flex items-center gap-1 text-sm text-paragraph">
+        <div class="mt-1 flex items-center text-xs gap-3">
+          <p
+            v-if="education.institution"
+            class="flex items-center gap-1 text-paragraph"
+          >
             <Icon class="text-lightParagraph" name="mdi:briefcase" size="13" />
             {{ education.institution }}
           </p>

@@ -16,17 +16,17 @@ onMounted(() => {
     </h3>
 
     <div class="flex flex-col gap-2">
-      <p class="flex items-center gap-1 text-sm text-lightParagraph">
+      <p class="flex items-center gap-1 text-lightParagraph">
         <Icon class="text-paragraph" name="mdi:map-marker" size="16" />
         {{ cvStore.data.contact.address }}
       </p>
 
-      <p class="flex items-center gap-1 text-sm text-lightParagraph">
+      <p class="flex items-center gap-1 text-lightParagraph">
         <Icon class="text-paragraph" name="mdi:email" size="16" />
         {{ cvStore.data.contact.email }}
       </p>
 
-      <p class="flex items-center gap-1 text-sm text-lightParagraph">
+      <p class="flex items-center gap-1 text-lightParagraph">
         <Icon class="text-paragraph" name="mdi:phone" size="16" />
         {{ cvStore.data.contact.phone }}
       </p>

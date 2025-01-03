@@ -18,7 +18,7 @@ const cvEnUs: CvData = {
   smallAbout:
     'Full-stack developer with 5 years of experience. Skilled and meticulous in Next (React), Nuxt (Vue), Tailwind, and TypeScript.',
   about:
-    'Passionate full-stack developer with a front-end focus. I specialize in pixel-perfect implementation of design mockups and seamless API integration. Proficient in AGILE methodologies and Clean Code principles, ensuring robust and sustainable solutions. Known for delivering high-quality work with meticulous attention to detail, reflecting my passion and rigorous approach.',
+    'Full-stack Developer with a front-end focus, expert in precise mockup integration and API communication. Mastery of AGILE methodologies and Clean Code for robust and sustainable solutions, with a keen attention to detail.',
   skills: [
     'TypeScript',
     'React',

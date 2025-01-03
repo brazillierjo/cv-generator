@@ -13,7 +13,7 @@ onMounted(() => {
   <Card v-if="cvStore.data">
     <h3 class="mb-3 text-lg font-semibold">{{ cvStore.data.titles.skills }}</h3>
 
-    <div class="flex flex-wrap justify-start gap-2">
+    <div class="flex flex-wrap justify-start gap-1">
       <div
         v-for="skill in cvStore.data.skills"
         :key="skill"
