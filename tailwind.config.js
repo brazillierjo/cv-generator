@@ -19,7 +19,7 @@ module.exports = {
 
         title: '#303336',
         paragraph: '#303336',
-        lightParagraph: 'red',
+        lightParagraph: '#ed0909',
 
         tagsBg: '#f3f4f6',
 

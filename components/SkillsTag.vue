@@ -11,7 +11,9 @@ onMounted(() => {
 
 <template>
   <Card v-if="cvStore.data">
-    <h3 class="mb-1 text-lg text-title font-semibold">{{ cvStore.data.titles.skills }}</h3>
+    <h3 class="mb-1 text-lg font-semibold text-title">
+      {{ cvStore.data.titles.skills }}
+    </h3>
 
     <div class="flex flex-wrap justify-start gap-1">
       <div

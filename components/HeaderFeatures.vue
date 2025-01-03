@@ -7,7 +7,18 @@ import type { Locale } from '~/utils/interfaces/Locales'
 const cvStore = useCvStore()
 const selectedLocale = ref(cvStore.currentLocale)
 
-const currentLocaleName = ref('Français (France 🇫🇷)')
+const getLocaleName = (locale: Locale) => {
+  switch (locale) {
+    case 'fr-FR':
+      return 'Français (France 🇫🇷)'
+    case 'en-US':
+      return 'Anglais (US 🇺🇸)'
+    case 'fr-CH':
+      return 'Français (Suisse 🇨🇭)'
+  }
+}
+
+let currentLocaleName = ref(getLocaleName(cvStore.currentLocale as Locale))
 
 watch(selectedLocale, async newLocale => {
   cvStore.loadData(newLocale as Locale)
@@ -40,7 +51,7 @@ const isProduction = process.env.NODE_ENV === 'production'
     </div>
 
     <header
-      class="flex items-center justify-between border-b bg-primary border-title px-8 py-3 print:hidden"
+      class="flex items-center justify-between border-b border-title bg-primary px-8 py-3 print:hidden"
     >
       <div class="relative w-fit">
         <div

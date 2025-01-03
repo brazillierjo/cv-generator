@@ -5,7 +5,7 @@ import type { Locale } from '~/utils/interfaces/Locales'
 
 export const useCvStore = defineStore('cv', {
   state: () => ({
-    currentLocale: 'fr-FR',
+    currentLocale: 'en-US',
     data: null as CvData | null,
     isLoading: false,
   }),
