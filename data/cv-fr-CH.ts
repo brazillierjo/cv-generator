@@ -18,7 +18,7 @@ const cvFrCh: CvData = {
   smallAbout:
     'Développeur full-stack avec 5 ans d’expérience, expert en Next.js, Nuxt.js, Tailwind et TypeScript.',
   about:
-    'Développeur full-stack orienté Front-end, expert en intégration précise de maquettes et en communication avec les API. Maîtrise des méthodologies AGILE et du Clean Code pour des solutions robustes et durables, avec une attention minutieuse aux détails.',
+    'Souhaitant m’installer en Suisse romande, je désire développer ma carrière en tant que développeur full-stack dans cette région.',
   skills: [
     'TypeScript',
     'React',
