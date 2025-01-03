@@ -11,23 +11,23 @@ onMounted(() => {
 
 <template>
   <Card v-if="cvStore.data">
-    <h3 class="mb-3 text-lg font-semibold text-title">
+    <h3 class="mb-1 text-lg font-semibold text-title">
       {{ cvStore.data.titles.contact }}
     </h3>
 
     <div class="flex flex-col gap-2">
-      <p class="flex items-center gap-1 text-lightParagraph">
-        <Icon class="text-paragraph" name="mdi:map-marker" size="16" />
+      <p class="flex items-center gap-1 text-paragraph">
+        <Icon class="text-lightParagraph" name="mdi:map-marker" size="16" />
         {{ cvStore.data.contact.address }}
       </p>
 
-      <p class="flex items-center gap-1 text-lightParagraph">
-        <Icon class="text-paragraph" name="mdi:email" size="16" />
+      <p class="flex items-center gap-1 text-paragraph">
+        <Icon class="text-lightParagraph" name="mdi:email" size="16" />
         {{ cvStore.data.contact.email }}
       </p>
 
-      <p class="flex items-center gap-1 text-lightParagraph">
-        <Icon class="text-paragraph" name="mdi:phone" size="16" />
+      <p class="flex items-center gap-1 text-paragraph">
+        <Icon class="text-lightParagraph" name="mdi:phone" size="16" />
         {{ cvStore.data.contact.phone }}
       </p>
     </div>

@@ -11,7 +11,7 @@ onMounted(() => {
 
 <template>
   <Card v-if="cvStore.data">
-    <h3 class="mb-3 text-lg font-semibold text-title">
+    <h3 class="mb-1 text-lg font-semibold text-title">
       {{ cvStore.data.titles.experiences }}
     </h3>
 

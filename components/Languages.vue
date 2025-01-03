@@ -11,13 +11,13 @@ onMounted(() => {
 
 <template>
   <Card v-if="cvStore.data">
-    <h3 class="mb-3 text-lg font-semibold text-title">
+    <h3 class="mb-1 text-lg font-semibold text-title">
       {{ cvStore.data.titles.languages }}
     </h3>
 
     <div class="flex flex-col gap-2">
       <div v-for="language in cvStore.data.languages" :key="language">
-        <p class="flex items-center gap-1 text-lightParagraph">
+        <p class="flex items-center gap-1 text-paragraph">
           {{ language }}
         </p>
       </div>
