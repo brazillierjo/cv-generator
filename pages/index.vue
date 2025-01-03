@@ -3,12 +3,26 @@ import CV from '~/components/CV.vue'
 
 const handleGeneratePDF = async () => {
   try {
-    const response = await fetch('/api/generate-pdf')
-    const data = await response.json()
+    const response = await fetch('/api/generate-pdf', {
+      method: 'GET',
+    })
 
-    data.success && console.log('PDF généré avec succès')
+    if (!response.ok) throw new Error('Erreur lors de la génération du PDF')
+
+    const blob = await response.blob()
+    const url = window.URL.createObjectURL(blob)
+
+    const a = document.createElement('a')
+
+    a.href = url
+    a.download = 'CV-RINCON_BRAZILLIER_Johan.pdf'
+    document.body.appendChild(a)
+    a.click()
+
+    window.URL.revokeObjectURL(url)
+    document.body.removeChild(a)
   } catch (error) {
-    console.error('Erreur lors de la génération du PDF:', error)
+    console.error('Erreur:', error)
   }
 }
 </script>
@@ -16,6 +30,9 @@ const handleGeneratePDF = async () => {
 <template>
   <div class="bg-[#f3f4f6]">
     <CV />
-    <button @click="handleGeneratePDF">Générer PDF</button>
   </div>
+
+  <button class="mt-10 print:hidden" @click="handleGeneratePDF">
+    Générer PDF
+  </button>
 </template>

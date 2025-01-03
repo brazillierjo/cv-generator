@@ -1,10 +1,18 @@
-import {generatePDF} from '~/utils/generatePDF'
+import { generatePDF } from '~/utils/generatePDF'
 
-export default defineEventHandler(async () => {
-    try {
-        await generatePDF()
-        return {success: true, message: 'PDF généré avec succès'}
-    } catch (error) {
-        return {success: false}
-    }
+export default defineEventHandler(async event => {
+  try {
+    const pdfBuffer = await generatePDF()
+
+    setHeader(event, 'Content-Type', 'application/pdf')
+    setHeader(
+      event,
+      'Content-Disposition',
+      'attachment; filename=CV-RINCON_BRAZILLIER_Johan.pdf',
+    )
+
+    return pdfBuffer
+  } catch (error) {
+    return { success: false }
+  }
 })

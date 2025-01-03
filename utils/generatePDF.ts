@@ -1,24 +1,30 @@
 import puppeteer from 'puppeteer'
 
 export async function generatePDF() {
+  const baseURL =
+    process.env.NODE_ENV === 'production'
+      ? process.env.NUXT_PUBLIC_SITE_URL
+      : 'http://localhost:3000'
+
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
 
-  await page.goto('http://localhost:3000/', {
-    waitUntil: 'networkidle0',
-  })
+  baseURL &&
+    (await page.goto(baseURL, {
+      waitUntil: 'networkidle0',
+    }))
 
-  await page.pdf({
-    path: 'CV-RINCON_BRAZILLIER_Johan.pdf',
+  const pdfBuffer = await page.pdf({
     format: 'A4',
     printBackground: true,
     margin: {
-      top: '20px',
-      bottom: '20px',
-      left: '20px',
-      right: '20px',
+      top: '0',
+      bottom: '0',
+      left: '0',
+      right: '0',
     },
   })
 
   await browser.close()
+  return pdfBuffer
 }
