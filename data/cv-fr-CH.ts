@@ -16,9 +16,9 @@ const cvFrCh: CvData = {
     phone: '+33 6 38 02 76 49',
   },
   smallAbout:
-    "Développeur full-stack avec 5 années d'expérience. Compétent et rigoureux en Next (React), Nuxt(Vue), Tailwind et TypeScript.",
+      "Développeur full-stack avec 5 ans d’expérience, expert en Next.js, Nuxt.js, Tailwind et TypeScript.",
   about:
-    "Développeur full-stack passionné, orienté Front-end. Ma spécialité : intégrer des maquettes\u0000\navec précision et assurer une communication fluide avec les API. Je maîtrise également les\u0000\nméthodologies AGILE et le Clean Code, garantissant ainsi des solutions robustes et\u0000\npérennes. Mon travail est reconnu pour sa qualité faisant preuve d'une attention méticuleuse\u0000\naux détails, reflet de ma passion et de ma rigueur.\u0000",
+      "Développeur full-stack orienté Front-end, expert en intégration précise de maquettes et en communication avec les API. Maîtrise des méthodologies AGILE et du Clean Code pour des solutions robustes et durables, avec une attention minutieuse aux détails.",
   skills: [
     'TypeScript',
     'React',
@@ -41,22 +41,20 @@ const cvFrCh: CvData = {
       location: 'Le Bourget du Lac',
       period: '08/2024 - présent',
       tasks: [
-        "Conception d'interfaces utilisateur modernes et performantes avec Next.js, TailwindCSS et TypeScript",
-        'Analyse et qualification des attentes et des pratiques des utilisateurs pour proposer des solutions adaptées',
+        "Développement d'UI modernes avec Next.js, TailwindCSS et TypeScript",
+        "Analyse des besoins utilisateurs pour des solutions adaptées",
       ],
     },
     {
       role: 'Développeur front-end',
       company: 'La Boîte Immo',
-      location: '',
+      location: 'Hyères',
       period: '01/2022 - 08/2024',
       tasks: [
-        "Création et maintenance d'interfaces utilisateur en utilisant React, Next.js et TypeScript",
-        'Transformation de maquettes Figma en pages web pixel perfect avec TailwindCSS',
-        'Mise en place de communications efficaces avec des API développées en Symfony',
-        'Application des méthodologies AGILE et des principes de Clean Code',
-        'Mise en place de processus CI/CD pour automatiser les déploiements et tests',
-        'Exploitation de Storybook pour documenter les composants UI et Docker pour containeriser les applications',
+        "Développement d'UI avec React, Next.js, TypeScript et TailwindCSS",
+        "Transformation de maquettes Figma en pages web pixel perfect",
+        "Intégration et optimisation des communications API Symfony",
+        "Automatisation des processus CI/CD, documentation UI avec Storybook et containerisation avec Docker",
       ],
     },
     {
@@ -65,15 +63,15 @@ const cvFrCh: CvData = {
       location: '',
       period: '01/2022 - présent',
       tasks: [
-        'Concevoir et développer des solutions web adaptées aux besoins spécifiques des clients',
-        'Collaboration efficace avec les équipes de projet pour respecter les délais',
-        'Maintenance continue et support technique pour garantir la pérennité et la performance des sites web créés',
+        "Conception et développement de solutions web sur mesure pour les clients",
+        "Collaboration étroite avec les équipes pour respecter les délais",
+        "Maintenance et support technique pour assurer la performance et pérennité des sites",
       ],
     },
     {
       role: 'Développeur full-stack',
       company: 'Vitassurance',
-      location: '',
+      location: 'Nice',
       period: '01/2021 - 01/2022',
       tasks: [
         "Concevoir et implémenter un site web permettant aux utilisateurs de comparer différentes offres d'assurances",
@@ -84,7 +82,7 @@ const cvFrCh: CvData = {
     {
       role: 'Web Analyste',
       company: 'poupepoupi.com',
-      location: '',
+      location: 'La Londe les Maures',
       period: '01/2014 - 01/2020',
       tasks: [
         'Amélioration du référencement naturel du site e-commerce en utilisant des techniques avancées de SEO',
@@ -92,7 +90,7 @@ const cvFrCh: CvData = {
       ],
     },
   ],
-  education: [
+  educations: [
     {
       degree:
         "Diplôme Fédéral d'Intégrateur/Développeur Web et Mobile (Bachelor)",

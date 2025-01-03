@@ -32,5 +32,5 @@ export interface CvData {
   skills: string[]
   languages: string[]
   experiences: Experience[]
-  education: Education[]
+  educations: Education[]
 }

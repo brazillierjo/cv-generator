@@ -10,8 +10,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
       colors: {
         primary: '#f3f4f6',
+        lightPrimary: '#f2f3f5',
 
         title: '#303336',
         paragraph: '#303336',

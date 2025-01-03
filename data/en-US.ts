@@ -38,7 +38,7 @@ const cvEnUs: CvData = {
     {
       role: 'Front-end Developer',
       company: 'Winter Energies',
-      location: 'Le Bourget du Lac, France',
+      location: 'Le Bourget du Lac - France',
       period: 'August 2024 - Present',
       tasks: [
         'Designing modern and high-performance user interfaces using Next.js, TailwindCSS, and TypeScript',
@@ -48,7 +48,7 @@ const cvEnUs: CvData = {
     {
       role: 'Front-end Developer',
       company: 'La Boîte Immo',
-      location: 'France',
+      location: 'Hyères - France',
       period: 'January 2022 - August 2024',
       tasks: [
         'Created and maintained user interfaces using React, Next.js, and TypeScript',
@@ -73,7 +73,7 @@ const cvEnUs: CvData = {
     {
       role: 'Full-stack Developer',
       company: 'Vitassurance',
-      location: 'France',
+      location: 'Nice - France',
       period: 'January 2021 - January 2022',
       tasks: [
         'Designed and implemented a website enabling users to compare various insurance offers',
@@ -84,7 +84,7 @@ const cvEnUs: CvData = {
     {
       role: 'Web Analyst',
       company: 'poupepoupi.com',
-      location: 'France',
+      location: 'La Londe les Maures - France',
       period: 'January 2014 - January 2020',
       tasks: [
         "Improved e-commerce website's organic search rankings using advanced SEO techniques",
@@ -92,7 +92,7 @@ const cvEnUs: CvData = {
       ],
     },
   ],
-  education: [
+  educations: [
     {
       degree: "Bachelor's Degree in Web Development and Mobile Integration",
       institution: '3WAcademy, Aix en Provence, France',
