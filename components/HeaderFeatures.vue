@@ -52,7 +52,7 @@ watch(selectedLocale, async newLocale => {
     </div>
 
     <button
-        class="flex items-center gap-3 rounded-lg bg-secondary px-3 py-1.5 text-text transition hover:bg-tertiary"
+      class="flex items-center gap-3 rounded-lg bg-secondary px-3 py-1.5 text-text transition hover:bg-tertiary"
       @click="handleGeneratePDF"
     >
       GET PDF
