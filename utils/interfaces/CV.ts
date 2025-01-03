@@ -1,3 +1,7 @@
+interface Titles {
+  [key: string]: string
+}
+
 interface Contact {
   email: string
   phone: string
@@ -19,9 +23,11 @@ interface Education {
 }
 
 export interface CvData {
+  titles: Titles
   name: string
   title: string
   contact: Contact
+  smallAbout: string
   about: string
   skills: string[]
   languages: string[]

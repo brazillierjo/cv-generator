@@ -1,13 +1,22 @@
 import type { CvData } from '~/utils/interfaces/CV'
 
 const cvFrFr: CvData = {
+  titles: {
+    contact: 'Coordonnées',
+    skills: 'Compétences',
+    languages: 'Langues',
+    experiences: 'Expériences',
+    education: 'Études',
+  },
   name: 'Johan R. Brazillier',
   title: 'Développeur web',
   contact: {
+    address: 'Annecy 🇫🇷',
     email: 'j.brazillier@gmail.com',
     phone: '+33 6 38 02 76 49',
-    address: 'Annecy - Hyères',
   },
+  smallAbout:
+    "Développeur full-stack avec 5 années d'expérience. Compétent et rigoureux en Next (React), Nuxt(Vue), Tailwind et TypeScript.",
   about:
     "Développeur full-stack passionné, orienté Front-end. Ma spécialité : intégrer des maquettes\u0000\navec précision et assurer une communication fluide avec les API. Je maîtrise également les\u0000\nméthodologies AGILE et le Clean Code, garantissant ainsi des solutions robustes et\u0000\npérennes. Mon travail est reconnu pour sa qualité faisant preuve d'une attention méticuleuse\u0000\naux détails, reflet de ma passion et de ma rigueur.\u0000",
   skills: [

@@ -25,20 +25,13 @@ onMounted(() => {
     </div>
 
     <div class="mt-8">
-      <h1 class="text-2xl font-bold text-gray-900">
+      <h1 class="text-2xl font-semibold text-title">
         {{ cvStore.data.name }}
       </h1>
-      <p class="text-lg font-medium text-gray-600">{{ cvStore.data.title }}</p>
 
-      <div class="mt-4 flex flex-wrap justify-start gap-2">
-        <span
-          v-for="skill in cvStore.data.skills"
-          :key="skill"
-          class="rounded-md bg-gray-200 px-2 py-1 text-xs font-medium"
-        >
-          {{ skill }}
-        </span>
-      </div>
+      <p class="text-lg font-medium text-paragraph">{{ cvStore.data.title }}</p>
+
+      <p class="mt-3 text-sm text-lightParagraph">{{ cvStore.data.smallAbout }}</p>
     </div>
   </Card>
 </template>

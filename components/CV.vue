@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import Profile from '~/components/Profile.vue'
+import SkillsTag from '~/components/SkillsTag.vue'
 </script>
 
 <template>
-  <div class="flex gap-6 p-4">
+  <div class="flex gap-4 p-4">
     <div class="w-1/3">
-      <aside class="flex flex-col gap-6">
+      <aside class="flex flex-col gap-4">
         <Profile />
+        <Contact />
+        <SkillsTag />
       </aside>
     </div>
 

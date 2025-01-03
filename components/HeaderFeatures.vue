@@ -30,7 +30,7 @@ watch(selectedLocale, async newLocale => {
   <header class="flex items-center justify-between px-8 py-6 print:hidden">
     <div class="relative w-fit">
       <div
-        class="relative w-full cursor-pointer rounded-full bg-tertiary px-3 py-1.5 pr-8 text-sm font-medium text-text transition"
+        class="relative w-full cursor-pointer rounded-full bg-tertiary px-3 py-1.5 pr-8 text-sm font-medium text-white transition"
       >
         {{ currentLocaleName }}
 
@@ -52,7 +52,7 @@ watch(selectedLocale, async newLocale => {
     </div>
 
     <button
-      class="flex items-center gap-3 rounded-lg bg-secondary px-3 py-1.5 text-text transition hover:bg-tertiary"
+      class="flex items-center gap-3 rounded-lg bg-tertiary px-3 py-1.5 text-white transition hover:bg-tertiary"
       @click="handleGeneratePDF"
     >
       GET PDF

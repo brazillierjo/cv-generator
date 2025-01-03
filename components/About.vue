@@ -11,6 +11,6 @@ onMounted(() => {
 
 <template>
   <Card v-if="cvStore.data">
-    <p class="text-sm text-gray-700">{{ cvStore.data.about }}</p>
+    <p class="text-sm text-paragraph">{{ cvStore.data.about }}</p>
   </Card>
 </template>

@@ -1,13 +1,22 @@
 import type { CvData } from '~/utils/interfaces/CV'
 
 const cvEnUs: CvData = {
+  titles: {
+    contact: 'Contact',
+    skills: 'Skills',
+    languages: 'Languages',
+    experiences: 'Experiences',
+    education: 'Education',
+  },
   name: 'Johan R. Brazillier',
   title: 'Web Developer',
   contact: {
+    address: 'Annecy 🇫🇷',
     email: 'j.brazillier@gmail.com',
     phone: '+33 6 38 02 76 49',
-    address: 'Annecy - Hyères, France',
   },
+  smallAbout:
+    'Full-stack developer with 5 years of experience. Skilled and meticulous in Next (React), Nuxt (Vue), Tailwind, and TypeScript.',
   about:
     'Passionate full-stack developer with a front-end focus. I specialize in pixel-perfect implementation of design mockups and seamless API integration. Proficient in AGILE methodologies and Clean Code principles, ensuring robust and sustainable solutions. Known for delivering high-quality work with meticulous attention to detail, reflecting my passion and rigorous approach.',
   skills: [
