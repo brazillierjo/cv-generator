@@ -21,10 +21,7 @@
     "HTML",
     "CSS"
   ],
-  "languages": [
-    "Anglais",
-    "Français"
-  ],
+  "languages": ["Anglais", "Français"],
   "experiences": [
     {
       "role": "Développeur front-end",
